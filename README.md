@@ -1,2 +1,2 @@
-Install and Configure Oracle Weblogic 
+Install and Configure Oracle Weblogic Server
 
