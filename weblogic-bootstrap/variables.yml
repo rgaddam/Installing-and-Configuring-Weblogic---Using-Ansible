@@ -1,0 +1,42 @@
+---
+# Oracle os user and group
+oracle_user: 'wlsadmin'
+oracle_group: 'wlsadmin'
+
+# Software and configuration main directory
+oracle_base: '/apps/oracle/platform12c_test'
+
+# JDK installer and target folder
+jdk_installation_archive: 'jdk-8u91-linux-x64.tar.gz'
+jdk_folder: '/apps/oracle/java'
+jdk_version: 'jdk1.8.0_91'
+
+# fmw installer
+mw_installer: 'weblogic_12.2.1_wls.jar'
+mw_installer_folder: '{{ oracle_base }}/installer'
+
+# Domain Name
+domain_name: 'test_domain'
+
+#Nodemanager and server settings
+node_manager_listen_port: '5556'
+node_manager_listen_address: 'localhost'
+admin_server_hostname: 'localhost'
+admin_server_port: '7001'
+managed_server_name: 'managedsrv1'
+managed_server_port: '7003'
+
+# Common Paths
+middleware_home: '{{ oracle_base }}/product/Oracle_Home'
+middleware_common_home: '{{ middleware_home }}/oracle_common'
+domains_home: '{{ oracle_base }}/config/Domains'
+applications_home: '{{ oracle_base }}/config/applications'
+mw_installer_folder: '{{ oracle_base }}/installer'
+domain_home: '{{ domains_home }}/{{ domain_name }}'
+nodemanager_home: '{{ oracle_base }}/config/nodemanagers/{{ domain_name }}'
+weblogic_home: '{{ middleware_home }}/wlserver'
+nodemanager_username: 'weblogic'
+weblogic_admin: 'weblogic'
+admin_server_name: 'AdminServer'
+server_hostname: '{{ ansible_fqdn }}'
+

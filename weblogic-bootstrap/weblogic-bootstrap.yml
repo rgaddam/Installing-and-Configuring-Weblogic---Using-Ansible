@@ -1,0 +1,9 @@
+---
+- hosts: weblogic-test 
+  vars:
+  - variables.yml
+  - password.yml
+  roles: 
+  - wls-install
+  - domain-install
+  - managedsrv-install
