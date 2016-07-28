@@ -10,6 +10,6 @@ managedsrv-install -- creates managed server for application.
 
 Execute below command to create weblogic server.
 
-# ansible-playbook weblogic-bootstrap.yml --vault-password-file ~/.vault_pass.txt
+-- ansible-playbook weblogic-bootstrap.yml --vault-password-file ~/.vault_pass.txt
 
 After playbook is sucessfully completed you can access your weblogic server from http://localhost:7001/console. 
