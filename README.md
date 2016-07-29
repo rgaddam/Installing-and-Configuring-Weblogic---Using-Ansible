@@ -1,7 +1,8 @@
 # Install and Configure Oracle Weblogic Server
 
-Ansible Playbook  to install and configure weblogic server 
-All your enviroment variables can be defined in Variables.yml & passwords in password.yml and can be encrypted using ansible-vault. 
+Ansible Playbook to install and configure weblogic server 
+
+All enviroment variables are defined in Variables.yml & passwords in password.yml and can be encrypted using ansible-vault. 
 
 Roles includes: 
 wls-install -- Installs JDK & Oracle 12c software. 
