@@ -1,0 +1,9 @@
+---
+# tasks file for cluster-config
+
+- name: Copy the Cluster.config script
+  template: src=cluster.py dest={{ mw_installer_folder }} owner={{ oracle_user }} group={{ oracle_group }}
+
+- name: Execute the Cluster creation script
+  shell: '{{ weblogic_home }}/common/bin/wlst.sh {{ mw_installer_folder }}/cluster.py'
+  sudo_user: '{{ oracle_user }}'
