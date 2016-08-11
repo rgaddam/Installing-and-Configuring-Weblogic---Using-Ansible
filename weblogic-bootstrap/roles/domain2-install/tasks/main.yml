@@ -1,0 +1,9 @@
+---
+
+- name: Copy create domain2  script
+  template: src=createdomain2.py dest={{ mw_installer_folder }} owner={{ oracle_user }} group={{ oracle_group }}
+
+- name: Execute create domain script
+  shell: '{{ weblogic_home }}/common/bin/wlst.sh {{ mw_installer_folder }}/createdomain2.py'
+  sudo_user: '{{ oracle_user }}'
+
