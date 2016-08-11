@@ -19,7 +19,8 @@ create the domain on 2nd server.
 
 cluster-config --  create cluster and add the managed servers to cluster. ( need to run this in offline mode)
 
-** Note Need to restart the Weblogic to get the cluster setup active. 
+** Note Need to restart the Weblogic server to get the cluster setup active. 
+
 
 Execute below command to create weblogic server.
 
