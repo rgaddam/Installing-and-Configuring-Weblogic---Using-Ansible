@@ -2,4 +2,5 @@
 localhost
 
 [weblogic-test]
-hostname
+hostname1.com
+hostname2.com
