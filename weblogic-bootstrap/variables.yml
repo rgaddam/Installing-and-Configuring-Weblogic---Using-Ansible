@@ -20,11 +20,16 @@ domain_name: 'test_domain'
 
 #Nodemanager and server settings
 node_manager_listen_port: '5556'
-node_manager_listen_address: 'localhost'
-admin_server_hostname: 'localhost'
+node_manager_listen_address: '10.52.65.3'
+node_manager_listen_address_2: '10.52.64.58'
+admin_server_hostname: '10.52.65.3'
 admin_server_port: '7001'
 managed_server_name: 'managedsrv1'
 managed_server_port: '7003'
+managed_server_name_2: 'managedsrv2'
+managed_server_port_2: '7004'
+
+cluster_name: 'test_cluster'
 
 # Common Paths
 middleware_home: '{{ oracle_base }}/product/Oracle_Home'
@@ -39,4 +44,4 @@ nodemanager_username: 'weblogic'
 weblogic_admin: 'weblogic'
 admin_server_name: 'AdminServer'
 server_hostname: '{{ ansible_fqdn }}'
-
+server_hostname_2: '{{ ansible_fqdn }}'
