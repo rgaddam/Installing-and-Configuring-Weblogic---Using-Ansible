@@ -5,6 +5,7 @@ Ansible Playbook to install and configure weblogic server & cluster configuratio
 All enviroment variables are defined in Variables.yml & passwords in password.yml and can be encrypted using ansible-vault. 
 
 Roles includes: 
+
 wls-install -- Installs JDK & Oracle 12c software. 
 
 domain-install -- creates domain 
@@ -14,7 +15,6 @@ managedsrv-install -- creates managed server for application.
 managedsrv2-install -- creates manged server 2 for application 
 
 domain2-install -- Connects to admin server creates a domain template and expands configuration of the domain to 2nd managedserver and 
-
 create the domain on 2nd server. 
 
 cluster-config --  create cluster and add the managed servers to cluster. ( need to run this in offline mode)
