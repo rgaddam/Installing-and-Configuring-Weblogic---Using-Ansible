@@ -1,0 +1,11 @@
+# playbook.yml
+---
+- hosts: seiimsbld03.tsudev.seic.com
+  sudo: yes
+  tasks:
+  - name: "STOP WEBLOGIC"
+    shell: pgrep -fU wlsadmin java.*weblogic | xargs kill; sleep 10; pgrep -fU wlsadmin java.*weblogic | xargs kill -9
+    ignore_errors: yes
+
+  - name: "START WEBLOGIC"
+    raw: sudo -i -u wlsadmin -- sh -c "cd /apps/oracle/platform12c_test/config/Domains/test_domain/bin; nohup sh ./startWebLogic.sh
