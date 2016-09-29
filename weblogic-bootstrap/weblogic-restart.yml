@@ -1,6 +1,6 @@
 # playbook.yml
 ---
-- hosts: seiimsbld03.tsudev.seic.com
+- hosts: 
   sudo: yes
   tasks:
   - name: "STOP WEBLOGIC"
