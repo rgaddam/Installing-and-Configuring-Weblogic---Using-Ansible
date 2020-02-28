@@ -1,5 +1,4 @@
-# Install and Configure Oracle Weblogic Server & Cluster Configuration 
-
+# Install and Configure Oracle Weblogic Server & Cluster Configuration -- Using Ansible
 Ansible Playbook to install and configure weblogic server & cluster configuration 
 
 All enviroment variables are defined in Variables.yml & passwords in password.yml and can be encrypted using ansible-vault. 
